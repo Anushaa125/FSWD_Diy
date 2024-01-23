@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter page</title>
+    <link rel="stylesheet" href="./filter.css" />
+  </head>
+  <body>
+
+    <div class="topBar">
+      <div class="navBar">
+        <div class="logo">e!</div>
+        <button class="login">Login</button>
+        <button class="create">Create an account</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="heading">Breakfast Places in Mumbai</div>
+
+      <div class="row">
+        <div class="sideBar">
+          <div class="filterPanel">
+            <div class="sideBarHeading">Filters</div>
+            <div class="sideBarSubHeading">Select Location</div>
+            <select name="city" id="location">
+              <option value="Select Location" disabled selected>Select Location</option>
+              <option>Mangalore</option>
+              <option>Mumbai</option>
+              <option>Bangalore</option>
+              <option>Delhi</option>
+            </select>
+
+            <div class="sideBarSubHeading">Cusine</div>
+            <input type="checkbox" id="north" />
+            <label for="north" class="option">North Indian</label><br/>
+            <input type="checkbox" id="south" />
+            <label for="south" class="option">South Indian</label><br/>
+            <input type="checkbox" id="chinese" />
+            <label for="chinese" class="option">Chinese</label><br/>
+            <input type="checkbox" id="fast" />
+            <label for="fast" class="option">Fast Food</label><br/>
+            <input type="checkbox" id="street" />
+            <label for="street" class="option">Street Food</label><br/>
+
+            <div class="sideBarSubHeading">Cost For Two</div>
+            <input type="radio" name="cost" id="five100" />
+            <label for="five100" class="option">Less Than ₹500</label><br/>
+
+            <input type="radio" name="cost" id="ten100"/>
+            <label for="ten100" class="option">₹500 to ₹1000</label><br/>
+
+            <input type="radio" name="cost" id="fifteen100" />
+            <label for="fifteen100" class="option">₹1000 to ₹1500</label><br/>
+
+            <input type="radio" value="" name="cost" id="twenty100" />
+            <label for="twenty100" class="option">₹1500 to ₹2000</label><br/>
+
+            <input type="radio" name="cost" id="twenty100p" />
+            <label for="twenty100p" class="option">₹2000+</label>
+
+
+            <div class="sideBarSubHeading">Sort</div>
+            <input type="radio" id="lowToHigh" name="sort" />
+            <label for="lowToHigh" class="option">Price low to high</label>
+            <br />
+            <input type="radio" id="highToLow" name="sort" />
+            <label for="highToLow" class="option">Price high to low</label>
+            <br />
+          </div>
+        </div>
+
+        <div class="mainBar">
+          <div class="resultPanel">
+            <div class="cbTopbar">
+              <div class="imageBox">
+                <img src="C:\full stack dev\Diy\Day11\images\breakfast.jpeg" class="img" alt="breakfast image" />
+              </div>
+              <div class="col2">
+                <div class="cbItemHeading">The Big Chill Bakery</div>
+                <div class="cbItemSubHeading">FORT</div>
+                <div class="cbAddress">
+                  Shp 1,Plot D,Samrudhi Complex,Chincholi..
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="cbBottombar">
+              <div class="col2">
+                <div class="cbAddress">CUSINE :Bakery</div>
+                <div class="cbAddress">COST FOR TWO : 700</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="resultPanel">
+            <div class="cbTopbar">
+              <div class="imageBox">
+                <img src="C:\full stack dev\Diy\Day11\images\breakfast.jpeg" class="img" alt="breakfast image" />
+              </div>
+              <div class="col2">
+                <div class="cbItemHeading">The Bake Shop</div>
+                <div class="cbItemSubHeading">FORT</div>
+                <div class="cbAddress">
+                  Shp 1,Plot D,Samrudhi Complex,Chincholi..
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="cbBottombar">
+              <div class="col2">
+                <div class="cbAddress">CUSINE :Bakery</div>
+                <div class="cbAddress">COST FOR TWO : 700</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomButton">
+            <button class="button"><</button>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
