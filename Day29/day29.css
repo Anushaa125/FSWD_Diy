@@ -1,0 +1,45 @@
+.main {
+    border: 5px solid rgb(232, 12, 12);
+    padding: 10px 8px 8px 10px;
+}
+
+.nb{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: red;
+}
+
+.nb-box{
+    width: 80%;
+    margin: auto;
+}
+
+.logo-box{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    padding: 24px;
+    border: solid 1px #707070;
+    background-color: #fff;
+    border-radius: 50%;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 15px;
+    letter-spacing: normal;
+    color: #eb2929;
+}
+
+
+.logo{
+    background-color: white;
+    border-radius: 50%;
+}
+.bodybox{
+    display: flex;
+    gap: 1rem;
+    border: 2px solid dodgerblue;
+    padding: 0.5rem;
+}
