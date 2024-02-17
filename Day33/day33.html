@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array, Object, Set and Map Datatypes</title>
+</head>
+<body>
+    <script>
+        const arr1 = ['Apple', 'Mango', 'Grapes', 'Guava'];
+        console.log(arr1);
+
+        const obj1 = [{
+            name: 'Surya',
+            empId: 3469,
+            mailId: 'suryamail@gmail.com',
+            Address: {
+                City: 'Nazamabad',
+                District: 'Nazamabad district',
+                Pin: 648597,
+            },
+            Hobbies: ['BAdminton', 'E-sports', 'Netflix'],
+        },
+    ];
+    console.log(obj1);
+    
+    for (let i of arr1){
+        console.log(i);
+    }
+
+    obj1.map((ele) => {
+        console.log(ele.name);
+        console.log(ele.empId);
+        console.log(ele.mailId);
+        console.log(ele.Address);
+        console.log(ele.Hobbies);
+    });
+
+    const fruits = new Set (["apple", "grapes", "mango", "guava"]);
+    console.log(fruits.has("mango"));
+
+    const map = new Map();
+    map.set("Hello World!", "Guava");
+
+    const arr2 = [1, 2, 3];
+    map.set(arr2, {
+        type: 'numbers',
+        value: arr2,
+    });
+    console.log(map);
+
+    
+    </script>
+</body>
+</html>
